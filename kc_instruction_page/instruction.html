@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instructions</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .game_area{
+            position: absolute;
+            height: 560px;
+            width: 960px;
+            background-color: blue;
+            bottom: 0;
+            left: 0;
+        }
+        .instruction_container{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 560px;
+            width: 960px;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.7);
+
+        }
+        .instruction_dialog{
+            position: absolute;
+            border-radius: 5px;
+            top: 5%;
+            height: 80%;
+            width: 75%;
+            background-color: dimgray;
+        }
+        .instruction_header{
+            position: absolute;
+            border-bottom: 1px solid black;
+            width:90%;
+            left: 5%;
+        }
+        .start_button{
+            position: absolute;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 5%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".start_button").click(function(){
+                $(".instruction_container").fadeOut('slow');
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="game_area">
+    <div class="instruction_container">
+        <div class="instruction_dialog">
+            <div class="instruction_header">
+                <h1>How To Play</h1>
+            </div>
+            <div class="">
+                <button class="start_button btn btn-default btn-lg">Start</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
