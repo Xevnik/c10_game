@@ -2,10 +2,6 @@
     padding: 0;
     margin: 0;
 }
-@font-face{
-    font-family: 'starfont';
-    src: url('font/starjedi.ttf') format('truetype');
-}
 .game_area{
     position: absolute;
     height: 960px;
@@ -77,8 +73,4 @@
     font-size: 15px;
     bottom: 1%;
     right: 2%;
-}
-h1{
-    font-family: 'starfont', sans-serif;
-
 }
