@@ -32,10 +32,13 @@
     bottom: 10%;
     height: 30%;
     width: 80%;
-    color: black;
     background-color: darkgray;
     background-image: url(kc_img/star-wars-rebel1.png);
     background-repeat: no-repeat;
+    background-position-x: 94%;
+    background-position-y: 2%;
+    background-blend-mode: overlay;
+    background-size: 14%;
 }
 .instruction_header{
     position: relative;
