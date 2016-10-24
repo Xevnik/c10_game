@@ -2,9 +2,80 @@
     padding: 0;
     margin: 0;
 }
+@font-face{
+    font-family: 'starfont';
+    src: url('font/starjedi.ttf') format('truetype');
+}
+.game_area{
+    position: absolute;
+    height: 960px;
+    width: 560px;
+    background-color: blue;
+    top: 0;
+    left: 0;
+    background-image: url(kc_img/back.png);
+}
+.instruction_container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(50, 50, 50, 0.6);
 
-.container{
-    height: 560px;
-    width: 960px;
-    background-color: black;
+}
+.instruction_dialog{
+    position: absolute;
+    border-radius: 5px;
+    bottom: 10%;
+    height: 30%;
+    width: 80%;
+    color: black;
+    background-color: darkgray;
+    background-image: url(kc_img/star-wars-rebel1.png);
+    background-repeat: no-repeat;
+}
+.instruction_header{
+    position: relative;
+    border-bottom: 1px solid black;
+    width:90%;
+    left: 5%;
+}
+.instuction_body{
+    position: relative;
+    width: 90%;
+    height: 60%;
+    top: 5%;
+    left: 5%;
+    font-size: 15px;
+}
+.controls{
+    display: inline-block;
+    height: 20%;
+    width: 30%;
+    font-weight: bold;
+}
+.descrip{
+    display: inline-block;
+    height: 15%;
+    width: 60%;
+}
+.start_button{
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 5%;
+}
+.speaker{
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    bottom: 1%;
+    right: 2%;
+}
+h1{
+    font-family: 'starfont', sans-serif;
+
 }
